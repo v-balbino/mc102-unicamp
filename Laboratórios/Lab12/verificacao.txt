@@ -1,0 +1,16 @@
+original_continuo = False
+    for s in range(0,m_A-m_B+1):
+        if original_continuo == True:
+            break
+        for x in range(0,n_B):
+            if original_continuo == True:
+                break
+            for y in range(0,m_B):
+                if A[x][y+s] == B[x][y]:
+                    original_continuo = True
+                    continue
+                else:
+                    original_continuo = False
+                    break
+            if original_continuo != False:
+                original_continuo = True 

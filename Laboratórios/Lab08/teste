@@ -1,0 +1,7 @@
+dna=[C', 'G', 'A', 'T', 'T', 'A']
+primer = ['G','A','T']
+
+if primer in dna:
+	print("SIM")
+else:
+	print("NÃO")
